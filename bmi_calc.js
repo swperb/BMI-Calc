@@ -35,20 +35,12 @@ function bmi_conversion(usr_height, usr_weight) {
 
 function bmi_category(bmi) {
     if (bmi < 18.5) {
-        document.getElementById("bmi").innerHTML = bmi.toFixed(3);
-        document.getElementById("category").innerHTML = "Underweight";
         return "Underweight";
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
-        document.getElementById("bmi").innerHTML = bmi.toFixed(3);
-        document.getElementById("category").innerHTML = "Normal weight";
+    } else if (bmi >= 18.5 && bmi < 25) {
         return "Normal weight";
-    } else if (bmi >= 25 && bmi <= 29.9) {
-        document.getElementById("bmi").innerHTML = bmi.toFixed(3);
-        document.getElementById("category").innerHTML = "Overweight";
+    } else if (bmi >= 25 && bmi < 30) {
         return "Overweight";
     } else {
-        document.getElementById("bmi").innerHTML = bmi.toFixed(3);
-        document.getElementById("category").innerHTML = "Obese";
         return "Obese";
     }
 }
@@ -63,5 +55,17 @@ function main() {
 
     let bmi = bmi_conversion(usr_height, usr_weight);
 
-    bmi_category(bmi);
+    let bmi_category = bmi_category(bmi);
+
+    document.getElementById("bmi").innerHTML = bmi.toFixed(3);
+    document.getElementById("category").innerHTML = bmi_category;
 }
+
+module.exports = {
+    convert_to_inches: convert_to_inches,
+    metric_conversion_weight: metric_conversion_weight,
+    metric_conversion_height: metric_conversion_height,
+    meters_squared: meters_squared,
+    bmi_conversion: bmi_conversion,
+    bmi_category: bmi_category,
+};
