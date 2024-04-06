@@ -1,0 +1,81 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    margin: 10px 0;
+
+}
+
+.height-label {
+    margin-top: 40px;
+}
+
+input[type="text"], button {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.height-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;                             
+}
+
+.height-container input {
+    margin-right: 10px;
+    width: 23%;
+}
+
+.height-container p {
+    margin-right: 10px;
+    align-self: center;
+}
+
+.weight-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weight-container p {
+    margin-left: 10px;
+    align-self: center;
+}
+
+input[id="weight"] {
+    width: 30%;
+}
+
+button {
+    padding: 12px;
+    margin: 30px 30px;
+    width: 15%;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+    transition: background-color 0.2s ease;
+}
+
+footer {
+    margin-top: 240px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="bmi_calc.js"></script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <label for="height" class="height-label">Enter your height:</label>
+
+    <div class="height-container">
+        <input type="text" id="ft" name="height" placeholder="" required>
+        <p>ft</p>
+        <input type="text" id="in" name="height" placeholder="" required>
+        <p>in</p>
+    </div>
+
+    <label for="weight">Enter your weight:</label>
+
+    <div class="weight-container">
+        <input type="text" id="weight" name="weight" placeholder="" required>
+        <p>lbs</p>
+    </div>
+
+    <button onclick="main()">Calculate</button>
+
+    <p><strong>Your BMI is: </strong><span id="bmi"></span></p>
+    
+    <p><strong>Category: </strong><span id="category"></span></p>
+
+    <footer>Created by Stephen Proctor | April 5, 2024</footer>
+</body>
+</html>
