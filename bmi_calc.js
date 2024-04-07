@@ -83,11 +83,11 @@ function main() {
     let bmi = bmi_conversion(usr_height, usr_weight);
 
     // Determine the BMI category
-    let bmi_category = bmi_category(bmi);
+    let category = bmi_category(bmi);
 
     // Display the BMI and category
     document.getElementById("bmi").innerHTML = bmi.toFixed(3);
-    document.getElementById("category").innerHTML = bmi_category;
+    document.getElementById("category").innerHTML = category;
 }
 
 module.exports = {
@@ -96,5 +96,5 @@ module.exports = {
     metric_conversion_height: metric_conversion_height,
     meters_squared: meters_squared,
     bmi_conversion: bmi_conversion,
-    bmi_category: bmi_category,
+    bmi_category: bmi_category
 };

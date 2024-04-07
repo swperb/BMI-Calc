@@ -29,7 +29,7 @@ input[type="text"], button {
 }
 
 .height-container {
-    width: 30%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;                             
