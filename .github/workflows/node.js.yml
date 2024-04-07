@@ -28,6 +28,8 @@ jobs:
         cache: 'npm'
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm install jest
     - run: npm ci
     - run: npm run build --if-present
