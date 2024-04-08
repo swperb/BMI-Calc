@@ -2,10 +2,9 @@ const { Builder, By } = require('selenium-webdriver');
 require('geckodriver'); // or another driver if you prefer a different browser
 
 describe('BMI Calculator E2E Tests', () => {
-  let driver;
 
   beforeAll(async () => {
-    driver = await new Builder().forBrowser('firefox').build();
+    let driver = await new Builder().forBrowser('firefox').build();
   });
 
   afterAll(async () => {
