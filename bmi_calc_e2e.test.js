@@ -8,10 +8,6 @@ describe('BMI Calculator E2E Tests', () => {
     driver = await new Builder().forBrowser('firefox').build();
   });
 
-  afterAll(async () => {
-    await driver.quit();
-  });
-
   it('should calculate BMI correctly', async () => {
 
     // Test navigation to hosted application
