@@ -1,10 +1,16 @@
 const { Builder, By } = require('selenium-webdriver');
-require('geckodriver'); // or another driver if you prefer a different browser
+const firefox = require('selenium-webdriver/firefox');
 
 describe('BMI Calculator E2E Tests', () => {
     it('should calculate BMI correctly', async () => {
 
-        let driver = await new Builder().forBrowser('firefox').build();
+        let options = new firefox.Options();
+        options.addArguments('--headless');
+
+        let driver = await new Builder()
+        .forBrowser('firefox')
+        .setFirefoxOptions(options)
+        .build();
 
         // Test navigation to hosted application
         await driver.get('https://bmi-calc-theta.vercel.app/');
