@@ -30,7 +30,5 @@ describe('BMI Calculator E2E Tests', () => {
         expect(category).toBe('Normal weight');
 
         
-        await driver.quit();
-        
     });
 });
