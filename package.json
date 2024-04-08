@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "geckodriver": "^4.3.3",
+    "selenium-webdriver": "^4.19.0"
   }
 }
