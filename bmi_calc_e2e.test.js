@@ -3,9 +3,9 @@ require('geckodriver'); // or another driver if you prefer a different browser
 
 describe('BMI Calculator E2E Tests', () => {
 
-  beforeAll(async () => {
-    let driver = await new Builder().forBrowser('firefox').build();
-  });
+
+  let driver = new Builder().forBrowser('firefox').build();
+
 
   afterAll(async () => {
     await driver.quit();
